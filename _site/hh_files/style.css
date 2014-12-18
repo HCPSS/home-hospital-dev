@@ -1,0 +1,875 @@
+/*
+Theme Name: HCPSS - 025
+Author: Howard County Public School System
+Author URI: http://www.hcpss.org/
+Description: Base theme for the HCPSS main site.
+Version: 0.025
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  color: #555;
+  background: #fff url('http://www.hcpss.org/f/mrb/base/header-stripe.png') repeat-x;
+}
+
+.header {
+  width: 960px;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-inner {
+  margin-top: 25px;
+}
+
+.logo {
+  float: left;
+  margin-right: 1em;
+}
+
+.logomark {
+  width: 700px;
+  float: left;
+}
+
+.logomark h1 {
+    font-weight: 300;
+  font-size: 28px;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+.sm {
+  float: right;
+}
+.social-media-icons {
+  float: left;
+}
+
+.social-media-icons li {
+  display: inline;
+}
+
+#main-navigation {
+  width: 800px;
+  background-color: #0063A4;
+  color: white;
+  height: 40px;
+    position: relative;
+    
+    float: right;
+    margin-right: 70px;
+    margin-top: -5px;
+/*    padding-left: 30px;*/
+    padding-top: 10px;
+}
+
+#main-navigation-menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#main-navigation-menu li {
+  float: left;
+  list-style: none;
+  font-size: 19px;
+  padding-left: 2.5em;
+  /*padding-top: 10px;*/
+}
+
+#main-navigation-menu a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#main-navigation-menu a.highlight {
+  border-bottom: 2px solid white;
+}
+
+.menu-drop {
+  display: none;
+  /* height: 300px; */
+  /* width: 800px; */
+  width: 760px;
+  /*background-color: #218656;*/
+  background-color: #0063A4;
+  color: #333;
+  position: absolute;
+  margin-top: 5px;
+  /*border-bottom: 5px solid #00B25D;*/
+  /* padding-top: 1em; */
+  padding: 20px;
+
+}
+
+.menu-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  z-index: 5;
+}
+
+#menu-about-drop li, #menu-schools-drop li, #menu-academics-drop li, 
+#menu-services-drop li, #menu-news-drop li {
+  float: none;
+  padding-left: 0;
+}
+
+
+
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+.shadow-smaller {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 0px 1px;
+  -webkit-border-bottom-left-radius:5px;
+  -webkit-border-bottom-right-radius:5px;
+  -webkit-border-top-right-radius:5px;
+  -webkit-border-top-left-radius:5px;
+  box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 0px 1px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  border-top-right-radius:5px;
+  border-top-left-radius:5px;
+}
+
+.fa-3 {
+  font-size: 2em;
+}
+
+.fa-5 {
+  font-size: 4em;
+  margin-left: 30px;
+}
+
+.menu-drop section {
+  padding-left: 1em;
+}
+
+.footer {
+  margin-top: 10px;
+  min-height: 160px;
+  background-color:  #0063A4;
+  border-top: 5px solid #00B25D;
+  padding-top: 20px;
+}
+
+.footer-inner {
+  width: 960px;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-directions {
+  width: 45%;
+  float: left;
+}
+
+.footer-directions address {
+  float: right;
+  color: #fff;
+  font-style: normal;
+  margin-top: 15px;
+}
+
+
+.footer-hcpssnews {
+  float: right;
+        width: 45%;
+  /* border-left: 1px solid #e7e7e7; */
+  padding-left: 1em;
+  color: #fff;
+}
+
+.subscribe a {
+  background-color: #FFBC00;
+  color: #fff; 
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.footer-nav {
+  float: right;
+        width: 45%;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav li {
+  float: left;
+  margin-right: 1em;
+}
+
+.footer-nav li a {
+  color: #fff;
+}
+
+/* */
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+/*
+.w {
+  margin-left: 240px;
+}
+*/
+a {
+  text-decoration: none;
+}
+
+.main {
+  font-size: 16px;
+  color: #444444;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+ /* margin-top: 80px;*/
+ /* width: 65%; */
+}
+
+.main h1 {
+  font-size: 32px;
+  color: #0063A4;
+  /* color: #066243; */
+  font-weight: bold;
+  line-height: 1.3em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.main h2 {
+  font-size: 24px;
+  /* color: #000; */
+  margin-bottom: 10px;
+}
+
+.main h3 {
+  font-size: 21px;
+  color:#000;
+}
+
+.main li { 
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: .5em;
+  margin-left: 0;
+}
+
+.main p {
+  font-size: 16px;
+  color: #444444;
+  line-height: 24px;
+  margin-right: 35px;
+}
+
+.icon {
+  width: 300px;
+  float: right;
+  margin: 0px 5px 10px 15px;
+}
+
+.pdf {
+  padding-right: 5px;
+}
+
+
+.filemeta {
+  color: #999999;
+  font-size: 12px;
+}
+
+a {
+  color: #3494D2;
+}
+
+a:hover {
+  color: #0063A4;
+}
+
+a.pdf-icon {
+  color: #999999;
+}
+
+a.pdf-icon:hover {
+  color: #FF4100;
+}
+
+.pict {
+  float: right;
+  margin: .5em;
+}
+
+.section-header {
+  text-transform: uppercase;
+  color: #00B25D;
+  background: url(http://www.hcpss.org/f/mrb/base/header-adornment.png) repeat-x center center;
+  text-align: center;
+}
+
+.section-header span {
+  background-color: #fff;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.thirds {
+  width: 33%;
+  float: left;
+}
+
+.thirds img {
+  margin-left: 30px;
+}
+
+.thirds .caption {
+  text-align: center;
+}
+
+.infographic-numbers {
+  color: #777;
+  font-size: 24px;
+  list-style: none;
+}
+
+.infographic-numbers li em {
+  color: #FF4100;
+  font-size: 32px;
+  font-style: normal;
+}
+
+.photo-swatch {
+  position: relative;
+  height: 400px;
+}
+
+.photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 260px;
+}
+
+.photo-01 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.photo-active {
+  left: 208px;
+  z-index: 2;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  box-shadow: -18px 10px 37px -5px rgba(0,0,0,0.6);
+}
+
+.photo-03 {
+ left: 412px;
+ -webkit-filter: grayscale(100%);
+ filter: grayscale(100%); 
+}
+
+.photo-caption {
+  position: absolute;
+  top: 300px;
+  left: 157px;
+  width: 625px;
+}
+
+h2.tagline {
+  /* margin: 0 auto;*/
+    margin-top: 50px;
+        margin-bottom: 50px;
+  color: #0063A4;
+  text-transform: uppercase;
+  /* margin-left: 300px;*/
+  text-align: center;
+}
+
+.essential-apps a {
+  color: #000;
+}
+
+.menu-drop .thirds li a {
+  font-size: 12px;
+}
+
+.menu-drop .thirds li {
+  float: none;
+  list-style: disc;
+}
+
+.sidebar {
+  width: 30%;
+}
+
+.page .main {
+  /* float: right; */
+}
+
+.page .sidebar {
+  float: left;
+}
+
+.post .main {
+  float: left;
+  width: 65%;
+}
+
+.post .sidebar {
+  float: right;
+}
+
+.body-content {
+  float: right;
+  width: 65%;
+}
+
+.widget_advanced_menu {
+  list-style: none;
+}
+
+.widget_advanced_menu .menu-side {
+  list-style: none;
+}
+
+.widget_advanced_menu .menu-side li.menu-item {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.fa-calendar, .fa-clock-o {
+  color: #00B25D; 
+}
+
+.fa-institution, .fa-users {
+  color: #0063A4; /* blue */
+}
+
+.fa-tasks {
+  color: #FFBC00;
+}
+
+.fa-medkit, .fa-cloud {
+  color: #e51c23; /* red */
+}
+
+.fa-cloud {
+  color: #e7e7e7;
+}
+
+.footer-directions address a {
+  color: white;
+}
+
+.logomark h1 a {
+  color: #555;
+}
+
+.action-link a {
+  background-color: #e51c23;
+  color:  white;
+  padding-left: 1em 2em;
+
+}
+
+.news-pager {
+   border-top: 1px solid #e7e7e7;
+}
+
+.news-previous {
+  text-align: left;
+}
+
+.news-next {
+  text-align: right;
+  float: right;
+}
+
+.sidebar li.widget_ultimate_posts, .sidebar li.widget_text {
+  list-style: none;
+}
+
+.sidebar li.widget_text {
+  border-top: 5px solid #00B25D;
+  border-bottom: 5px solid #00B25D;
+}
+
+.sidebar li#sticky-posts-7 {
+  border-top: 5px solid #00B25D;
+  margin-top: 2em;
+}
+
+.sidebar li#sticky-posts-6 {
+  border-bottom: 5px solid #00B25D;
+}
+
+
+#q {
+  width: 80%;
+}
+
+#search-button {
+  color: white;
+  background-color: #FFBC00;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 0 .3em .3em 0;
+  -webkit-border-radius: 0 0.3em;
+  -moz-border-radius-topright: .3em;
+  -moz-border-radius-topleft: .3em;
+  text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}
+
+.single {
+	background-color: #00B25D;
+	height: 260px;
+	margin-bottom: 30px;
+}
+
+.single .image {
+	width: 500px;
+	float: left;
+}
+
+.single .card {
+        color: white;
+	padding: 1em;
+	float: right;
+	width: 375px;
+}
+
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.428571429;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+
+.table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table .table {
+  background-color: #ffffff;
+}
+
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+
+.table-bordered {
+  border: 1px solid #dddddd;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #dddddd;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #f9f9f9;
+}
+
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #f5f5f5;
+}
+
+table col[class*="col-"] {
+  display: table-column;
+  float: none;
+}
+
+table td[class*="col-"],
+table th[class*="col-"] {
+  display: table-cell;
+  float: none;
+}
+
+.table > thead > tr > td.active,
+.table > tbody > tr > td.active,
+.table > tfoot > tr > td.active,
+.table > thead > tr > th.active,
+.table > tbody > tr > th.active,
+.table > tfoot > tr > th.active,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td,
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th {
+  background-color: #f5f5f5;
+}
+
+.table > thead > tr > td.success,
+.table > tbody > tr > td.success,
+.table > tfoot > tr > td.success,
+.table > thead > tr > th.success,
+.table > tbody > tr > th.success,
+.table > tfoot > tr > th.success,
+.table > thead > tr.success > td,
+.table > tbody > tr.success > td,
+.table > tfoot > tr.success > td,
+.table > thead > tr.success > th,
+.table > tbody > tr.success > th,
+.table > tfoot > tr.success > th {
+  background-color: #dff0d8;
+}
+
+.table-hover > tbody > tr > td.success:hover,
+.table-hover > tbody > tr > th.success:hover,
+.table-hover > tbody > tr.success:hover > td,
+.table-hover > tbody > tr.success:hover > th {
+  background-color: #d0e9c6;
+}
+
+.table > thead > tr > td.danger,
+.table > tbody > tr > td.danger,
+.table > tfoot > tr > td.danger,
+.table > thead > tr > th.danger,
+.table > tbody > tr > th.danger,
+.table > tfoot > tr > th.danger,
+.table > thead > tr.danger > td,
+.table > tbody > tr.danger > td,
+.table > tfoot > tr.danger > td,
+.table > thead > tr.danger > th,
+.table > tbody > tr.danger > th,
+.table > tfoot > tr.danger > th {
+  background-color: #f2dede;
+}
+
+.table-hover > tbody > tr > td.danger:hover,
+.table-hover > tbody > tr > th.danger:hover,
+.table-hover > tbody > tr.danger:hover > td,
+.table-hover > tbody > tr.danger:hover > th {
+  background-color: #ebcccc;
+}
+
+.table > thead > tr > td.warning,
+.table > tbody > tr > td.warning,
+.table > tfoot > tr > td.warning,
+.table > thead > tr > th.warning,
+.table > tbody > tr > th.warning,
+.table > tfoot > tr > th.warning,
+.table > thead > tr.warning > td,
+.table > tbody > tr.warning > td,
+.table > tfoot > tr.warning > td,
+.table > thead > tr.warning > th,
+.table > tbody > tr.warning > th,
+.table > tfoot > tr.warning > th {
+  background-color: #fcf8e3;
+}
+
+.table-hover > tbody > tr > td.warning:hover,
+.table-hover > tbody > tr > th.warning:hover,
+.table-hover > tbody > tr.warning:hover > td,
+.table-hover > tbody > tr.warning:hover > th {
+  background-color: #faf2cc;
+}
+
+@media only screen and (min-width: 685px) {
+  .footer {
+      min-width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+     body {
+       background: #fff url('http://www.hcpss.org/f/mrb/base/header-stripe-mobile.png') repeat-x;
+     }
+
+    .header, .container, .footer, .footer-inner, .footer-directions, .footer-hcpssnews, .main, .sidebar, .thirds {
+     width: 100%;
+    }
+   
+   .logomark {
+    width: 100%;
+    float: none;
+   }
+   .logo {
+     margin: 0 auto;
+     float: none;
+   }
+   .photo-swatch {
+     display: none;
+   }
+   .footer-directions, .footer-directions address {
+     float: none;
+   }
+   .footer {
+     margin-left: auto;
+     margin-right: auto;
+     padding-right: 40px;
+   }
+   .footer-inner {
+     margin: auto;
+     padding-left: 20px;
+     padding-right: 20px;
+   }
+   .body-content {
+     float: none;
+     width: 100%;
+   }
+   .pict {
+     float: none;
+     margin: 0;
+    }
+   .menu-side {
+     padding-left: 0;    
+   }
+   .sidebar {
+     border-top: 3px solid #00B25D;
+   }
+   .menu-item a:after {
+     content: "   >";
+   }
+   img.logo.shadow-smaller {
+     height: 80px;
+     width: 80px;
+   }
+   .subscribe {
+     display: block;
+   }
+   #main-navigation {
+     width: 100%;
+     height: auto;
+     border-top: 5px solid #00B25D;
+     border-bottom: 5px solid #00B25D;
+     margin: 0;
+   }
+   .header-inner {
+     text-align: center;
+   }
+   .sm, .social-media-icons {
+     float: none;
+   }
+   .social-media-icons {
+     padding-left: 0;
+   }
+   #hcpss-gmaps-footer-icon {
+     display: none;
+   }
+   li#nav-about, li#nav-academics, li#nav-news, li#nav-schools, li#nav-services, li#nav-search {
+     font-size: 22px;
+   }
+   li#nav-about, li#nav-academics, li#nav-news {
+     float: left;
+     padding: .5em 1em;
+   }
+
+   li#nav-schools, li#nav-services, li#nav-search {
+     float: right;
+     padding: .5em 1em;
+   }
+   .fa-search {
+     display: none;
+   }
+   .sidebar li.widget_text {
+     border-top: 3px solid #00B25D;
+     border-bottom: 3px solid #00B25D;
+   }
+
+   .sidebar li#sticky-posts-7 {
+     border-top: none;
+     margin-top: auto;
+   }
+
+   .sidebar li#sticky-posts-6 {
+     border-bottom: none;
+   }
+   .menu-drop {
+     width: 88%;
+   }
+   .post .main {
+     width: 100%;
+   }
+   img.story {
+     width: 100%;
+     height: 100%;
+   }
+   .single {
+	height: auto;
+   }
+
+   .single .image {
+	width: 100%;
+	float: none;
+   }
+
+   .single .image img {
+	width: 100%;
+   }
+
+   .single .card {
+	color:white;
+	padding: 1em;
+	float: none;
+	width: 100%;
+   }
+
+   .single .card h2 {
+	padding-right: 1em;
+   }
+}
